@@ -6,6 +6,8 @@ directories:
 script:
   - mkdir build
   - cp index.html build/
+  - yarn run sass
+  - yarn run css-process
 deploy:
   provider: s3
   access_key_id: "AKIAIUBLXQCJJUUQLUSQ"
