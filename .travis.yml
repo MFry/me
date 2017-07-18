@@ -1,8 +1,10 @@
 language: node_js
 node_js:
   - node
-directories:
-  - node_modules
+cache:
+  yarn: true
+  directories:
+    - node_modules
 script:
   - mkdir build
   - mkdir build/css
