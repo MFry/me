@@ -5,6 +5,7 @@ directories:
   - node_modules
 script:
   - mkdir build
+  - mkdir build/css
   - cp index.html build/
   - yarn run sass
   - yarn run css-process
