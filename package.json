@@ -6,7 +6,9 @@
   "scripts": {
     "test": "exit 0",
     "sass": "node-sass assets/sass/main.scss assets/css/style.css",
-    "css-process": "touch build/css/style.min.css && cleancss -O2 -c '*' -o build/css/style.min.css assets/css/style.css"
+    "css-preprocess": "postcss build/css/*.css --use autoprefixer -d /build/css",
+    "css-process": "touch build/css/style.min.css && cleancss -O2 -c '*' -o build/css/style.min.css assets/css/style.css",
+    "build": "yarn run sass && yarn run css-preprocess && yarn run css-process"
   },
   "repository": {
     "type": "git",
@@ -18,11 +20,14 @@
     "url": "https://github.com/MFry/me/issues"
   },
   "homepage": "https://github.com/MFry/me#readme",
-  "dependencies": {
+  "browserlist": ["> 5%", "last 2 versions"],
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
     "bootstrap-sass": "^3.3.7",
     "clean-css": "^4.1.7",
     "clean-css-cli": "^4.1.6",
     "font-awesome": "^4.7.0",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.0"
   }
 }
