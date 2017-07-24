@@ -9,7 +9,8 @@ script:
   - mkdir build
   - mkdir build/css
   - cp index.html build/
-  - yarn run build
+  - yarn run sass
+  - yarn run css-process
   - ls build
 deploy:
   provider: s3
