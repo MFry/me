@@ -10,6 +10,7 @@ script:
   - mkdir build/css
   - cp index.html build/
   - yarn run sass
+  - yarn run css-preprocess
   - yarn run css-process
   - ls build
 deploy:
