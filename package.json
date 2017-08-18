@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "exit 0",
-    "sass": "node-sass --include-path node_modules/bootstrap-sass/assets/stylesheets/ --include-path node_modules/font-awesome/scss/ assets/sass/main.scss build/css/style.css",
-    "css-preprocess": "postcss build/css/*.css --use autoprefixer -d build/css",
-    "css-process": "touch build/css/style.min.css && cleancss -O2 -c '*' -o build/css/style.min.css build/css/style.css",
-    "build": "yarn run sass && yarn run css-preprocess && yarn run css-process"
+    "css-process": "touch build/css/style.min.css && cleancss -O2 -c '*' -o build/css/style.min.css build/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -20,23 +17,20 @@
     "url": "https://github.com/MFry/me/issues"
   },
   "homepage": "https://github.com/MFry/me#readme",
-  "browserlist": [
-    "> 5%",
-    "last 2 versions"
-  ],
+  "browserlist": ["> 5%", "last 2 versions"],
   "devDependencies": {
-    "autoprefixer": "^7.1.2",
     "babel-eslint": "^7.2.3",
     "bootstrap-sass": "^3.3.7",
     "clean-css": "^4.1.7",
     "clean-css-cli": "^4.1.6",
+    "custom-react-scripts": "^0.2.0",
     "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "5",
     "eslint-plugin-react": "^7.2.1",
     "font-awesome": "^4.7.0",
-    "node-sass": "^4.5.3",
-    "postcss-cli": "^4.1.0"
-  }
+    "webpack-dashboard": "^0.4.0"
+  },
+  "dependencies": {}
 }
