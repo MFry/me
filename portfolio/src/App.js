@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 
-//components
+// components
 import Emoji from './Emoji';
 
-//styles
+// styles
 import './App.scss';
 import './App.less';
 import './App.styl';
+import './style/scss/main.scss';
 
-//modules
+// modules
 import cssStyles from './First.module.css';
 import sassStyles from './Second.module.scss';
 import lessStyles from './Third.module.less';
@@ -33,9 +34,7 @@ class App extends Component {
 
         <div className={stylusStyles.description}>
           <div className={sassStyles.command}>
-            <code>
-              create-react-app my-app --scripts-version custom-react-scripts
-            </code>
+            <code>create-react-app my-app --scripts-version custom-react-scripts</code>
           </div>
 
           <p>
@@ -50,28 +49,12 @@ class App extends Component {
               <span>- Enable SASS</span>
             </li>
             <li>
-              <code>REACT_APP_LESS=true</code>
-              <span>- Enable LESS</span>
-            </li>
-            <li>
-              <code>REACT_APP_STYLUS=true</code>
-              <span>- Enable Stylus</span>
-            </li>
-            <li>
               <code>REACT_APP_CSS_MODULES=true</code>
               <span>- Enable CSS modules </span>
             </li>
             <li>
               <code>REACT_APP_SASS_MODULES=true</code>
               <span>- Enable Sass modules </span>
-            </li>
-            <li>
-              <code>REACT_APP_SASS_MODULES=true</code>
-              <span>- Enable Stylus modules </span>
-            </li>
-            <li>
-              <code>REACT_APP_SASS_MODULES=true</code>
-              <span>- Enable Less modules </span>
             </li>
           </ul>
 
@@ -102,7 +85,7 @@ class App extends Component {
                 >
                   webpack-dashboard
                 </a>{' '}
-                 (must be installed)
+                (must be installed)
               </span>
             </li>
           </ul>
