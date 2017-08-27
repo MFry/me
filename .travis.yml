@@ -7,12 +7,14 @@ cache:
     - node_modules
 script:
   - yarn run build
+  - ls
+  - ls build
 deploy:
   provider: s3
   access_key_id: "AKIAIUBLXQCJJUUQLUSQ"
   secret_access_key:
     secure: "w/DlbHt1bzTw3p0ljHBjuYcExyoUaMn/fFscOAotivP1ZMiJl+/DZZ76mrL7SlOTac84ydQEwj2/6q1GZiLwu3o1cXbJrATdZyP/fHviXct5xlqysukj8n27HPS/qhlI18n1REKf+yP4Kbu/e1cl5FbGanc8GO/RipaYqH6sPEuvSptyAC+gBqjfkNGCIAvpe5V7Bm+2HKNkvca1ulcBc19COg80af/xn9OvGSwM5fZaCtRKnpwHPN6DqWWFdAVLUZX+Up95DFcRWcAuoacdKAKvT++I3KUXWN0ederZCWPzf5pqcvrfQgXy6BWXEJVp5pLAzXEm9P7732NrwBLs8+vIYFzVts3PAIGpCeiz/KtbGfpxa/PBx6eUYClSBxNAW1R4Yj6dYKZAYmOLJlBghZdBzGJWKBYdAhWqd0GU9fEDQUCfHQX3ovjzTgR5dfdSbWEkxs3Sxg9VT5dTLovpSIF79Lt7gV+v9XM60ME4RoiQbikrWQxe9f0O8qJhbtUB/a+1VAEyangC44da+bTNIoexQGtuoTu8dvJ+xT5ktOArn5sh3YiIGvc7LA/zLSuxgiIL8W18FG0PCFQ3h3g6NaaxCqYZHeHAD9SVqEOaIGcHkB6a97YJINAUV3kjF1OnN+BH6RbFIrfD+JYY0O6mbM8v555dPpOU8GbtliMa2pE="
-  bucket: "codefry-portfolio"
+  bucket: "codefry.me"
   acl: public_read
   skip_cleanup: true
   local_dir: build
