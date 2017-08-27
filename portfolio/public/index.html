@@ -1,19 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
 
-    <!-- Bootstrap -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!--
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Bootstrap -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -22,57 +24,48 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Michal Frystacky - Portfolio</title>
-  </head>
-  <body>
-      <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
+  <title>Michal Frystacky - Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="row">
-          <div class="column-md-12">
-            <div class="page-header">
-              <h1>Michal Frystacky</h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column-md-12">
-            <div class="page-header">
-              <h1>Projects</h1>
-            </div>
-            <h2></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="http://via.placeholder.com/242x200" alt="">
-              <h3>Project Name</h3>
-              <p> ... </p>
-              <p><a href='#' class="btn btn-primary" role="button">Github</a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column-md-12">
-            <div class="page-header">
-              <h1>Contact me</h1>
-            </div>
-          </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div class="container">
+    <div class="row">
+      <div class="column-md-12">
+        <div class="page-header">
+          <h1>Michal Frystacky</h1>
         </div>
       </div>
-    <!--
+    </div>
+    <div class="row">
+      <div class="column-md-12">
+        <div class="page-header">
+          <h1>Projects</h1>
+          <div id="root"></div>
+        </div>
+        <h2></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column-md-12">
+        <div class="page-header">
+          <h1>Contact me</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -82,5 +75,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
