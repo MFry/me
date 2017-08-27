@@ -1,12 +1,7 @@
 {
-  "name": "codefry-portfolio",
-  "version": "0.0.1",
-  "description": "Projects portfolio",
-  "main": "index.js",
-  "scripts": {
-    "test": "exit 0",
-    "css-process": "touch build/css/style.min.css && cleancss -O2 -c '*' -o build/css/style.min.css build/css/style.css"
-  },
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MFry/me.git"
@@ -17,12 +12,22 @@
     "url": "https://github.com/MFry/me/issues"
   },
   "homepage": "https://github.com/MFry/me#readme",
-  "browserlist": ["> 5%", "last 2 versions"],
+  "dependencies": {
+    "custom-react-scripts": "0.2.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "toolbox": "react-toolbox-themr",
+    "eject": "react-scripts eject"
+  },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "bootstrap-sass": "^3.3.7",
-    "clean-css": "^4.1.7",
-    "clean-css-cli": "^4.1.6",
     "custom-react-scripts": "^0.2.0",
     "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
@@ -31,7 +36,8 @@
     "eslint-plugin-react": "^7.2.1",
     "font-awesome": "^4.7.0",
     "prettier-eslint": "^6.4.2",
-    "webpack-dashboard": "^0.4.0"
-  },
-  "dependencies": {}
+    "react-toolbox": "^2.0.0-beta.12",
+    "react-toolbox-themr": "^1.0.2",
+    "webpack-dashboard": "next"
+  }
 }
