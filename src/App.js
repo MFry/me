@@ -12,6 +12,7 @@ import './style/scss/main.scss';
 import cssStyles from './First.module.css';
 import sassStyles from './Second.module.scss';
 
+// eslint-disable-next-line
 const Test = () =>
   (<div className="App">
     <div className={cssStyles.header}>

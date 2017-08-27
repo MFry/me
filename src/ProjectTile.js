@@ -14,20 +14,12 @@ const ProjectTile = ({ projectTitle, summary, imgLink }) =>
       {summary}
     </div>
     <div className="card-action">
-      <a href="#" target="new_blank">
+      <a
+        href="https://github.com/MFry/pyTournamentTracker"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Github
-      </a>
-      <a href="#" target="new_blank">
-        Link
-      </a>
-      <a href="#" target="new_blank">
-        Link
-      </a>
-      <a href="#" target="new_blank">
-        Link
-      </a>
-      <a href="#" target="new_blank">
-        Link
       </a>
     </div>
   </div>);
