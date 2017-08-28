@@ -1,5 +1,7 @@
 import React from 'react';
-
+import Card from 'react-md/lib/Cards/Card';
+import CardTitle from 'react-md/lib/Cards/CardTitle';
+import CardText from 'react-md/lib/Cards/CardText';
 import ProjectTile from './ProjectTile';
 
 const TournamentTracker = {
@@ -9,9 +11,14 @@ const TournamentTracker = {
 };
 
 const Projects = () =>
-  (<div className="row">
-    <div className="col-md-6 col-sm-12">
-      <ProjectTile {...TournamentTracker} />
+  (<div className="md-grid">
+    <div className="md-cell--4">
+      <Card>
+        <CardTitle title={TournamentTracker.projectTitle} />
+        <CardText>
+          {TournamentTracker.summary}
+        </CardText>
+      </Card>
     </div>
   </div>);
 export default Projects;

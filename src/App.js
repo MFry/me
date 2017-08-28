@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import Projects from './Projects';
+import Profile from './Profile';
 // components
 import Emoji from './Emoji';
 
@@ -31,8 +32,10 @@ const Test = () =>
   </div>);
 
 const App = () =>
-  (<div className="Container">
+  (<main>
+    <header className="md-grid" />
+    <Profile />
     <Projects />
-  </div>);
+  </main>);
 
 export default App;
