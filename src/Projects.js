@@ -12,7 +12,7 @@ const TournamentTracker = {
 
 const Projects = () =>
   (<div className="md-grid">
-    <div className="md-cell--4">
+    <div className="md-cell--3">
       <Card>
         <CardTitle title={TournamentTracker.projectTitle} />
         <CardText>
