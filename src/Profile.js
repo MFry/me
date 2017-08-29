@@ -1,14 +1,10 @@
 import React from 'react';
-import Card from 'react-md/lib/Cards/Card';
-import CardTitle from 'react-md/lib/Cards/CardTitle';
-import CardText from 'react-md/lib/Cards/CardText';
 
 const Profile = () =>
   (<div className="md-grid">
-    <div className="md-cell--12">
-      <Card>
-        <CardTitle title="Michal Frystacky" subtitle="Web and Software Developer" />
-      </Card>
+    <div className="md-cell md-cell--12 md-text-container">
+      <h2>Michal Frystacky</h2>
+      <h5>Web and Software Developer</h5>
     </div>
   </div>);
 export default Profile;
