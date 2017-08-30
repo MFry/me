@@ -13,22 +13,25 @@
   },
   "homepage": "https://codefry.me",
   "dependencies": {
+    "npm-run-all": "^4.1.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
-    "react-md": "^1.0.19"
+    "react-md": "^1.0.19",
+    "react-scripts": "1.0.12",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "toolbox": "react-toolbox-themr",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "bootstrap-sass": "^3.3.7",
-    "custom-react-scripts": "^0.2.0",
     "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
