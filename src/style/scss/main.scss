@@ -1,7 +1,9 @@
-@import 'globals';
+@import "globals";
 @include react-md-everything;
 //@import "../../../node_modules/font-awesome/css/font-awesome";
 
-body {
-  font-family: 'Roboto', sans-serif;
+.center-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
